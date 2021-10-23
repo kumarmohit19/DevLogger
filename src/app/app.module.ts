@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { LogService } from './services/log.service';
 
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { LogsComponent } from './components/logs/logs.component';
     LogFormComponent,
     LogsComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [LogService],
   bootstrap: [AppComponent],
 })
